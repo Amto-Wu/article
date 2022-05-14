@@ -229,3 +229,13 @@ XCOPY          复制文件和目录树。
 WMIC           在交互式命令 shell 中显示 WMI 信息。
 ```
 
+
+
+设置环境变量
+
+```sh
+set a=3		# 设置临时环境变量
+
+setx /m GIT_HOME abc		# 永久设置 GIT_HOME 变量为 abc
+```
+

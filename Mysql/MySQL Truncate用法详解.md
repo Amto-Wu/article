@@ -44,20 +44,18 @@ Truncate是一个能够快速清空资料表内所有资料的SQL语法。并且
 
 ### 一、Truncate语法
 
-[ { database_name.[ schema_name ]. | schema_name . } ]
-table_name
-[ ; ]
+[ { database_name.[ schema_name ]. | schema_name . } ] table_name [ ; ]
 
 参数
 
-database_name
-数据库的名称。
-
-schema_name
-表所属架构的名称。
-
-table_name
-要截断的表的名称，或要删除其全部行的表的名称。
+> database_name
+> 数据库的名称。
+>
+> schema_name
+> 表所属架构的名称。
+>
+> table_name
+> 要截断的表的名称，或要删除其全部行的表的名称。
 
 
 

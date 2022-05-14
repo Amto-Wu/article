@@ -167,6 +167,12 @@ Math.abs(1 / 3 - (1 - 2 / 3)) < 0.0000001; // true
 
 #### null和undefined
 
+undefined
+
+> 1.声明变量未赋值
+>
+> 2.访问对象不存在的属性
+
 `null`表示一个“空”的值，它和`0`以及空字符串`''`不同，`0`是一个数值，`''`表示长度为0的字符串，而`null`表示“空”。
 
 在其他语言中，也有类似JavaScript的`null`的表示，例如Java也用`null`，Swift用`nil`，Python用`None`表示。但是，在JavaScript中，还有一个和`null`类似的`undefined`，它表示“未定义”。

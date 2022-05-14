@@ -95,6 +95,66 @@ toUint32 = uint32(baseNum);
 whos;
 ```
 
+2.在图形上加格栅、图例和标注
+
+```matlab
+GRID ON		% 加格栅在当前图上
+GRID OFF	% 删除格栅
+
+xlabel(string)		% 在当前图形的x轴上加图例string
+ylabel(string)		% 在当前图形的y轴上加图例string
+zlabel(string)		% 在当前图形的z轴上加图例string
+title(string)		% 在当前图形的顶端上加图例string
+```
+
+```matlab
+x=linspace(0,2*pi,30);
+y=sin(x);
+plot(x,y)
+xlabel('自变量X')
+ylabel('函数Y')
+title('示意图')
+grid on
+```
+
+3.自定义标注位置
+
+```matlab
+gtext('string')			% 绘图后使用鼠标自定义标注位置
+```
+
+```matlab
+x=linspace(0,2*pi,30);
+y=sin(x);
+z=cos(x);
+plot(x,y,x,z)
+gtext('sin(x)');gtext('cos(x)')
+```
+
+4.指定义坐标系范围
+
+```matlab
+axis([xmin xmax ymin ymax zmin zmax])
+```
+
+```matlab
+x=linspace(0.0001,0.01,1000);
+y=sin(1./x);
+plot(x,y)
+axis([0.005 0.01 –1 1])
+```
+
+5.图形保持
+
+```matlab
+% 保持当前图形, 以便继续画图到当前图上
+hold on
+% 释放当前图形窗口
+hold off
+```
+
+
+
 ## 后记
 
 关于语句结尾是否加 `;`
